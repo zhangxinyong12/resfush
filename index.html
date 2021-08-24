@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cont {
+            width: 200px;
+            height: 200px;
+            font-size: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont div {
+            width: 100%;
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        .cont input {
+            height: 24px;
+            line-height: 24px;
+            font-size: 16px;
+            width: 80%;
+            outline: none;
+            text-indent: 12px;
+        }
+
+        .cont button {
+            padding: 10px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div>
+            <input type="text" name="" id="urlname" placeholder="请输入要刷新的url">
+        </div>
+        <div>
+            <button id="refresh">确定</button>
+
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

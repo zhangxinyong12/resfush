@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "刷新当前网站",
+  "description": "刷新当前网站",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "cookies",
+    "storage",
+    "declarativeContent",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content-script.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  }
+}
